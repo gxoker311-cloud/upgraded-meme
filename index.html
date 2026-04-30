@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>Gxoker UBT EXAM</title>
+    <title>Gxoker UBT V50 </title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Montserrat:wght@500;700&family=Pyidaungsu:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root { 
@@ -149,7 +149,7 @@
     }, 1000);
 
     function finalize() {
-         အကုန်ဖြေပြီးပြီလား ?")) return;
+        if(!confirm("အကုန်ဖြေပြီးပြီလား?")) return;
         clearInterval(timerInterval);
         const score = userChoices.filter((a, i) => a === examData[i].c).length * 5;
         document.getElementById('total-score').innerText = score;
@@ -165,5 +165,5 @@
     renderQuestion();
 </script>
 </body>
-          </html>
+</html>
 
